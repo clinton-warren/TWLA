@@ -1,0 +1,29 @@
+<?php
+/**
+ * Single
+ *
+ * Loop container for single post content
+ *
+ * @package WordPress
+ * @subpackage Foundation, for WordPress
+ * @since Foundation, for WordPress 4.0
+ */
+
+get_header(); ?>
+
+    <!-- Main Content Single Post-->
+    <div class="large-12 columns rounded-corners" role="main" id="main_wrap">
+
+		<?php if ( have_posts() ) : ?>
+
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content', 'single' ); ?>
+			<?php endwhile; ?>
+			
+		<?php endif; ?>
+
+    </div>
+    <!-- End Main Content -->
+
+<?php dynamic_sidebar( 'awards-widget' ); ?>
+<?php get_footer(); ?>

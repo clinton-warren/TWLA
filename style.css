@@ -1,0 +1,899 @@
+/*
+Theme Name: TWLA for Wordpress
+Author: TheWhiteLabelAgecy
+Author URI: http://www.thewhitelabelagency.com/
+Version: 1.0
+*/
+
+
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Images
+:: Posts
+:: Typography
+:: Header
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+/* -----------------------------------------
+   Images
+----------------------------------------- */
+@import url('css/media-screens.css');
+
+.widget img {
+    max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
+}
+img.size-full {
+    max-width: 97.5%;
+    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+}
+
+.wp-caption { max-width: 100%; }
+
+/* -----------------------------------------
+   Posts
+----------------------------------------- */
+
+.author-box h5 {margin-top:0px;}
+.author-box .author_gravatar {margin-right:10px;}
+.author-box p {font-size:14px; font-size:1.4em;}
+
+article .th {margin-bottom:10px; margin-bottom:1em;}
+
+.alignleft {float:left;}
+.alignright {float:right;}
+.aligncenter {margin:0 auto;text-align:center;}
+
+/* -----------------------------------------
+   Typography
+----------------------------------------- */
+
+body,h1,h2,h3,h4,h5,h6,p {font-family: 'PT Sans', Arial;}
+h1,h2,h3,h4,h5,h6 {font-weight:700;}
+a:link {font-weight:inherit;}
+
+.site-title .subheader {margin-bottom:0;}
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+
+.site-header {border-bottom:1px solid #ddd;padding:1.5rem 0 1rem 0;margin:-1.875em 0 1.875em 0;}
+.sidebar ul li {list-style:none;}
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+.wp-caption-text {text-align: center;}
+.sticky { }
+.gallery-caption { }
+.bypostauthor{ }
+.site-content .gallery {
+    margin-bottom: 1.5em;
+}
+.gallery-caption {
+}
+.site-content .gallery a img {
+    border: none;
+    height: auto;
+    max-width: 90%;
+}
+.site-content .gallery dd {
+    margin: 0;
+}
+.site-content .gallery-columns-4 .gallery-item {
+}
+.site-content .gallery-columns-4 .gallery-item img {
+}
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/* -----------------------------------------
+                Mobile Menu
+----------------------------------------- */
+.mobile-menu{
+    /*right: 200px;*/
+}
+.mobile-menu .top-bar{
+    background:#000000;
+}
+
+.mobile-menu .top-bar.expanded {
+    left: auto;
+    /*right: -200px;*/
+    /*position: absolute;*/
+    top: 0;
+   /* width: 200px;*/
+    height: 100% !important;
+    background: #222222;
+} 
+
+.top-bar{
+    /*background:transparent;*/
+}
+
+.top-bar .toggle-topbar.menu-icon a span {
+background: url(images/white-menu-button.png) no-repeat right center;
+}
+
+
+/* -----------------------------------------
+                Backgrounds
+----------------------------------------- */
+body{
+    background: url('images/home.jpg') no-repeat top center;
+    background-attachment:fixed; 
+    background-size: cover;
+} 
+
+
+/* -----------------------------------------
+               Content
+----------------------------------------- */
+[role="content"]{
+    background: #fff;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 1.563em 10% 0.938em 10%;
+    max-width:51.875em;
+}
+
+ul.pagination{
+    background: #fff;
+    padding-top: 1em;
+    clear: both;
+}
+#blog{
+    background: #fff;
+    padding-top: 1em;
+}
+/* -----------------------------------------
+                Logo
+----------------------------------------- */
+.logo img{
+    float: left 
+}
+.contact-info{
+    float:right;
+    text-transform: uppercase;
+}
+.contact-info h3{
+    color:#f1e600;
+    font-size: 1.063em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.063em;
+    line-height: 1;
+}
+.contact-info span{
+    color:#fff;
+    font-size: 2.250em;
+    font-weight: 700;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.bottom-logo {
+    text-align: center;
+}
+
+.eidman-header{
+    padding-top: 2.188em;
+}
+
+.eidman-menu{
+    margin-top: 1.5em; 
+}
+
+/* -----------------------------------------
+              Navigation
+----------------------------------------- */
+
+.top-bar-section li a:not(.button){
+    color: #fff;
+    text-transform: uppercase;
+}
+.top-bar-section ul {
+    display: inline-block;
+    background: transparent;
+}
+.top-bar-section .current_page_item a{
+    color:#f1e600 !important;
+}
+/* -----------------------------------------
+                Footer Menu
+----------------------------------------- */
+footer{
+    height: 21.875em;
+    min-height:4.688em;
+    background: #000;
+    background-image: url('images/footer-bg.jpg');
+    margin-top: 2em;
+}
+
+.eidman-footer{
+    padding:0;
+    padding-top: 1em;
+}
+
+.eidman-footer .inline-list a{
+    padding:0;
+    color: #bfbcb4;
+    /*font-size: 1em;*/
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight:400;
+}
+
+.eidman-footer .inline-list li{
+    line-height: 1.5em;
+    font-size: 0.75em;
+}
+
+.eidman-footer .inline-list > li{
+    padding-right:1em;
+    margin-left:1em;
+    line-height:1em;
+    margin-top:1.2em;
+    border-right: 1px solid #bfbcb4;
+}
+
+.eidman-footer .inline-list > li:last-child{
+    border-right: 0;
+}
+
+.eidman-footer .inline-list {
+    margin-bottom:0;
+    margin-left: -0.75em;
+}
+
+/* -----------------------------------------
+                Page styles
+----------------------------------------- */
+.eidman-page{
+    min-height:100%;
+    overflow:visible;
+    margin-top:-33.563em;
+    padding-top:33.563em;
+    max-width:51.875em;
+}
+
+/* -----------------------------------------
+               Main Page styles
+----------------------------------------- */
+.eidman-home-widget{
+    background-color:#004b8d;
+    padding: 1.563em 10% 0.938em 10%;
+    position: relative;
+    clear: both;
+    background: #004b8d url('images/arrow-down.jpg') no-repeat center top;
+    color:#FFF;
+}
+
+.main-page-widget-header{
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+}
+
+.rounded-corners{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url('border-radius.htc');
+    position: relative;
+    zoom: 1;
+}
+
+/* -----------------------------------------
+               All Pages styles
+----------------------------------------- */
+.page-title{
+    font-weight:700;
+    font-size: 2em;
+}
+
+/* -----------------------------------------
+               AOP Pages styles
+----------------------------------------- */
+.eidman-aop-widget{
+    width:100%;
+    background: #004b8d url('images/folder-icon.png') no-repeat left top;
+    padding-left:85px;
+    min-height: 75px;
+}
+
+.aop-page-widget-header{
+    text-align:left;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.related-cases-links{
+    color:#db620f;
+}
+.back-cases-links{
+    color:#db620f;
+    font-size: 14px;
+    font-weight: 600 !important;
+    text-decoration: underline;
+}
+.back-cases-links:hover{
+    color:#db620f;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.related-cases-links:hover{
+    color:#db620f;
+}
+
+.related-cases-links:focus{
+    color:#db620f;
+}
+
+.related-cases-links:visited{
+    color:#db620f;
+}
+
+.related-cases-links:visited{
+    color:#db620f;
+}
+
+/* -----------------------------------------
+         Case Results Pages styles
+----------------------------------------- */
+.eidman-case-results-post-header{
+    font-size: 21px;
+    margin-bottom: 0;
+}
+
+/* -----------------------------------------
+         Testimonials Pages styles
+----------------------------------------- */
+.eidman-testimonials-article{
+    background-color:#004b8d;
+    padding:0.625em;
+    color:#ffffff;
+    font-size: 22px;
+    margin: 2em 0em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.eidman-testimonials-case{
+    font-family: 'PT Sans', Arial;
+    font-weight: 700;
+    font-style: italic;
+    color: #f2e600;
+    margin-bottom: 0;
+}
+
+.eidman-testimonials-quote{
+    color: #ffffff;
+    text-align: left;
+    padding: 0 12%;
+    font-size:1em;
+}
+
+.eidman-testimonials-name{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    margin-bottom: 3px;
+}
+
+.eidman-testimonials-content p{
+    text-align: left;
+	font-size:.75em;
+    padding: 5px 15px 0px 15px;
+    margin-bottom:1em;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.eidman-testimonials-content strong{
+    color: #ffffff;
+    text-align: center;
+    padding: 1.250em 3.5em;
+    font-size: 27px;
+    padding-bottom:0;
+}
+
+.eidman-testimonials-location{
+    color: #f2e600;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* -----------------------------------------
+        Index Pages styles (Blog too)
+----------------------------------------- */
+
+[role="main"]{
+    background: #fff;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 1.563em 10% 0.938em 10%;
+    max-width:51.875em;
+}
+
+.blog-title{
+    color: #004b8d;
+    margin-top: -20px;
+    font-size: 28px;
+}
+
+.blog-post-article-title{
+    color: #004b8d;
+    font-size:28px;
+    margin-top: 0;
+}
+
+.blog-post-exerpt{
+    color: #004b8d;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -15px;
+    margin-bottom:0;
+    line-height: 21px;
+}
+
+.blog-post-meta{
+    margin-top: 0;
+    color: #004b8d;
+    font-weight: 400;
+}
+
+.blog-post-thumb{
+    padding: 0;
+    padding-top: 2em;
+    padding-right:1em;
+}
+
+.blog-post-content{
+    padding: 0;
+    padding-top: 1.563em;
+} 
+
+.blog-post-content-2{
+    padding-left: 0;
+}
+
+.blog-post-more-link{
+    font-size:0.75em;
+}
+
+.single-post-thumb{
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.single-post-thumb img{
+    max-width: 300px;
+}
+
+
+/* -----------------------------------------
+        FAQ Page styles (Blog too)
+----------------------------------------- */
+
+.faq-article{
+    width:100%;
+}
+
+.faq-article > article > ul{
+    padding-left:85px;
+    list-style-type:none;
+    background:url('images/faq-icon.jpg') no-repeat left top;
+    margin-bottom: 2em;
+    min-height:143px;
+}
+
+.faq-article > article > ul h2{
+    color: #004b8d;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.faq-article > article > ul li:first-child{
+    color: #004b8d;
+    font-size: 28px;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 0.2em;
+}
+
+/* -----------------------------------------
+        Contact Page styles (Blog too)
+----------------------------------------- */
+
+.contact-widget{
+    width:100%;
+    margin-top:0.938em;
+    margin-bottom:1.563em;
+} 
+
+.contact-page-widget-header{
+    color:#004b8d;
+    text-align:center;
+    font-size: 30px;
+}
+
+.contact-city{
+    color: #004b8d;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.contact-page-header{
+    color: #004b8d;
+    font-size: 1.750em;
+    margin-bottom: 1.5em;
+}
+
+span.wpcf7-list-item{
+    display: block;
+}
+
+span.wpcf7-list-item input[type="checkbox"]{
+    margin-bottom:0px;
+}
+
+.your-case{
+    display:block;
+    padding-left:20%;
+    background:url('images/mail-icon.png') no-repeat left top;
+    margin-bottom: 2.500em;
+}
+
+.wpcf7-form-control-wrap input[type="text"],
+.wpcf7-form-control-wrap input[type="email"]{
+    max-width:240px;
+    display: inline;
+    margin-bottom:0;
+    height: 3.3125em;
+}
+
+.wpcf7-textarea{
+    height: 9em;
+    max-width:575px;
+}
+
+.wpcf7-form p:last-of-type{
+    text-align:right;
+    max-width:575px;
+}
+
+.wpcf7-form-control-wrap input[type="text"],
+.wpcf7-form-control-wrap input[type="email"],
+.wpcf7-form-control-wrap textarea{
+    border: 1px solid #000000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* -----------------------------------------
+                 Media queries
+----------------------------------------- */
+
+@media (max-width: 845px) {
+    
+    .eidman-footer{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+}
+
+@media (max-width: 580px) {
+    
+    .contact-info{
+        display: block;
+        text-align: center;
+        float: none;
+    }
+    
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    
+    .logo img{
+        float: none;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    
+.contact-info span a{
+	color:yellow;
+}
+
+
+    .your-case{
+        display:block;
+        padding-left:10%;
+        background:url('images/mail-icon-small.jpg') no-repeat left top;
+        margin-bottom: 2.500em;
+    }
+
+    .eidman-aop-widget{
+        background-position: center 10px;
+        padding-left: 10%;
+        padding-right:10%;
+        padding-top:85px;
+        text-align:center;
+    }
+
+    .aop-page-widget-header{
+        text-align:center;
+    }
+    
+    .eidman-testimonials-quote{
+        font-size:1em;
+    }
+    
+    .eidman-testimonials-article{
+        font-size:1em;
+    }
+    
+    .blog-title{
+        font-size: 20px;
+    }
+    
+    .blog-post-article-title{
+        font-size: 20px;
+    }
+    
+    .blog-post-exerpt{
+        font-size: 15px;
+        margin-top: -13px;
+        line-height: 17px;
+    }
+    
+    .blog-post-meta{
+        font-size: 14px;
+    }
+
+    .blog-post-thumb{
+        padding-top: 1em;
+    }
+    
+    .faq-article > article > ul{
+        padding-left:45px;
+        background:url('images/faq-icon-small.jpg') no-repeat left top;
+        margin-bottom: 1em;
+        min-height:75px;
+    }
+
+    .faq-article > article > ul h2{
+        font-size: 20px;
+    }
+    
+    .faq-article > article > ul li:first-child{
+        font-size: 20px;
+    }
+    
+    .contact-page-header{
+        font-size: 20px;
+    }
+    
+    span.wpcf7-list-item{
+        margin-left: 1.2em;
+        
+    }
+    
+    .contact-page-widget-header{
+        font-size: 20px;
+    }
+    
+    .wpcf7-list-item-label{
+        font-size:14px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .contact-page-widget-header{
+        text-align:center;
+    }
+
+    .contact-widget{
+        text-align:center;
+    }
+    
+    .contact-widget p{
+        font-size: 13px;
+    }
+    
+    .contact-city{
+        margin-bottom: 12px;
+    }
+
+}
+
+/* mobile devices */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	#page-body {
+		background-size:145%;
+	}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#page-body {
+		background-size:100%;
+	}
+}
+
+
+
+
+/*-----------------------------------*/
+
+/*стили для десктопов и больших планшетов*/ 
+.lt-ie9 .eidman-menu{
+    text-align:center;
+}
+
+.lt-ie9 .top-bar {
+  background: inherit;
+  *zoom: 1;
+  overflow: visible; 
+  margin-top:1.5em;
+  margin-bottom:1.563em;
+  text-align:center;
+  height:auto;
+  line-height:inherit;
+}
+
+.lt-ie9 .top-bar > ul{
+    display:none;
+    visibility:hidden;
+}
+
+.lt-ie9 .top-bar:before, .lt-ie9 .top-bar:after {
+  content: " ";
+  display: table; 
+}
+.lt-ie9 .top-bar:after { clear: both; }
+.lt-ie9 .top-bar .toggle-topbar { display: none; }
+.lt-ie9 .top-bar .title-area { float: left; }
+.lt-ie9 .top-bar .name h1 a { width: auto; }
+.lt-ie9 .top-bar input,
+.lt-ie9 .top-bar .button {
+  line-height: 2em;
+  font-size: 0.875em;
+  height: 2em;
+  padding: 0 10px;
+  position: relative;
+  top: 8px; 
+}
+.lt-ie9 .top-bar.expanded { background: #111111; }
+.lt-ie9 .contain-to-grid .top-bar {
+  max-width: 57.5em;
+  margin: 0 auto; 
+}
+.lt-ie9 .top-bar-section {
+  -webkit-transition: none 0 0;
+  -moz-transition: none 0 0;
+  transition: none 0 0;
+  left: 0 !important; 
+}
+.lt-ie9 .top-bar-section ul {
+  width: auto;
+  height: auto !important;
+  display: inline-block; 
+  color:#ffffff;
+  text-align:left;
+}
+.lt-ie9 .top-bar-section ul li { float: left; }
+.lt-ie9 .top-bar-section ul li > a { padding-right: 14px !important; color:#ffffff;  background-color:transparent;} 
+.lt-ie9 .top-bar-section ul li .js-generated { display: none; }
+.lt-ie9 .top-bar-section li a:not(.button) {
+  padding: 0 15px;
+  line-height: 45px;
+  /*background: #111111; */
+  color:#ffffff;
+}
+.lt-ie9 .top-bar-section li a:not(.button):hover { /*background: #2b2b2b;*/ color:#ffffff; text-decoration:underline;}
+.lt-ie9 .top-bar-section .has-dropdown > a { padding-right: 35px !important; }
+.lt-ie9 .top-bar-section .has-dropdown > a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px;
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+  margin-top: -2.5px; 
+}
+.lt-ie9 .top-bar-section .has-dropdown.moved { position: relative; }
+.lt-ie9 .top-bar-section .has-dropdown.moved > .dropdown { visibility: hidden; }
+.lt-ie9 .top-bar-section .has-dropdown:hover > .dropdown, 
+.lt-ie9 .top-bar-section .has-dropdown:active > .dropdown { visibility: visible; }
+.lt-ie9 .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+  border: none;
+  content: "\00bb";
+  margin-top: -7px;
+  right: 5px; 
+}
+.lt-ie9 .top-bar-section .dropdown {
+  left: 0;
+  top: auto;
+  background: transparent; 
+}
+.lt-ie9 .top-bar-section .dropdown li a {
+  line-height: 1;
+  white-space: nowrap;
+  padding: 7px 15px;
+  background: #1e1e1e; 
+  color:#ffffff;
+}
+.lt-ie9 .top-bar-section .dropdown li label {
+  white-space: nowrap;
+  background: #1e1e1e; 
+}
+.lt-ie9 .top-bar-section .dropdown li .dropdown {
+  left: 100%;
+  top: 0; 
+}
+.lt-ie9 .top-bar-section > ul > .divider {
+  border-bottom: none;
+  border-top: none;
+  border-right: solid 1px #2b2b2b;
+  border-left: solid 1px black;
+  clear: none;
+  height: 45px;
+  width: 0px; 
+}
+.lt-ie9 .top-bar-section .has-form {
+  background: #111111;
+  padding: 0 15px;
+  height: 45px; 
+}
+.lt-ie9 .top-bar-section ul.right li .dropdown {
+  left: auto;
+  right: 0; 
+}
+.lt-ie9 .top-bar-section ul.right li .dropdown li .dropdown { right: 100%; }
+
+.page-id-286 .dropdown li a {color:white !important; }
+
+.top-bar-section ul { height:500px;}
