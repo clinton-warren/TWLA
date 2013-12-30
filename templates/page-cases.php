@@ -7,7 +7,7 @@
 get_header(); ?>
 
     <!-- Main Content Case Results-->
-    <div class="large-12 columns rounded-corners" role="content" id="main_wrap">
+    <div class="large-10 large-offset-1 columns rounded-corners" role="content" id="main_wrap">
 	<h2 class="page-title"><?php the_title(); ?></h2>
 	
 	    <?php query_posts('post_type=cases&order=ASC&post_status=publish&posts_per_page=-1&paged='. get_query_var('paged')); ?>

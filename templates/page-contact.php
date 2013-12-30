@@ -7,7 +7,7 @@
 get_header(); ?>
 
     <!-- Main Content Contact Page-->
-    <div class="large-12 columns rounded-corners" role="content" id="main_wrap">
+    <div class="large-10 large-offset-1 columns rounded-corners" role="content" id="main_wrap">
         
         <?php //query_posts('post_type=faq&order=ASC&post_status=publish&posts_per_page=5&paged='. get_query_var('paged')); ?>
 

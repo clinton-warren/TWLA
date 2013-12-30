@@ -7,7 +7,7 @@
 get_header(); ?>
 
     <!-- Main Content Just Page-->
-    <div class="large-12 columns rounded-corners" role="content" id="main_wrap">
+    <div class="large-10 large-offset-1 columns rounded-corners" role="content" id="main_wrap">
 
 		<?php if ( have_posts() ) : ?>
 
